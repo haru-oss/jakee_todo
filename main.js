@@ -11,7 +11,7 @@ const onclicked = () => {
     const li = document.createElement("li");
     // div.list-low生成 
     const div = document.createElement("div");
-    div.className = "list-low";
+    div.className = "list-row";
     
     // p.todo-item生成
     const p = document.createElement("p");
@@ -20,12 +20,12 @@ const onclicked = () => {
     // innerTextとcontentは何が違うのか?????????
     
     //    完了buttun生成
-     const complateButtun = document.createElement("buttun");
+     const complateButtun = document.createElement("button");
      complateButtun.innerText = "完了";
      
      
     //  削除buttun生成
-     const deleteButtun = document.createElement("buttun");
+     const deleteButtun = document.createElement("button");
      deleteButtun.innerText = "削除";
      
      
