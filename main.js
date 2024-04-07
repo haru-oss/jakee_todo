@@ -19,23 +19,28 @@ const onclicked = () => {
     p.textContent= (inputText);
     // innerTextとcontentは何が違うのか?????????
     
-    //    buttun生成
-     const buttun = document.createElement("buttun");
-     buttun.textContent = "完了"
+    //    完了buttun生成
+     const complateButtun = document.createElement("buttun");
+     complateButtun.innerText = "完了";
+     
+     
+    //  削除buttun生成
+     const deleteButtun = document.createElement("buttun");
+     deleteButtun.innerText = "削除";
      
      
     
-     console.log(p);
 
 
-//    上のタグ達の階層構造を指定していく
-    li.appendChild(div);
+    //    上のタグ達の階層構造を指定していく
     div.appendChild(p);
-
+    div.appendChild(complateButtun);
+    div.appendChild(deleteButtun);
+    li.appendChild(div);
     // 未完了リストに追加
     document.getElementById("incomplate-list").appendChild(li);
     
-
+   
 
 
 
