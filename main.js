@@ -20,6 +20,8 @@ const onclicked = () => {
     // innerTextとcontentは何が違うのか?????????
     
     //    完了buttun生成
+
+
      const complateButtun = document.createElement("button");
      complateButtun.innerText = "完了";
      
@@ -54,7 +56,7 @@ const onclicked = () => {
 }
 
 
-document.getElementById("add-todo").addEventListener("click",onclicked);
+document.getElementById("add-button").addEventListener("click",onclicked);
 
 
 
