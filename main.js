@@ -19,11 +19,18 @@ const onclicked = () => {
     
     //    完了buttun生成
 
+    // 完了ボタンを押したら、削除の時と同様liタグを消す必要がある。
 
      const complateButtun = document.createElement("button");
      complateButtun.innerText = "完了";
      complateButtun.addEventListener("click", () => {
-        alert("完了")
+        //    押された完了ボタンの親にあるliタグ配下の完了ボタンと削除ボタンを削除
+        const moveTarget = complateButtun.closest("li");
+
+        // 自分自身を消す時はこのように記述
+        complateButtun.nextElementSibling.remove();
+    
+
      });
      
      
