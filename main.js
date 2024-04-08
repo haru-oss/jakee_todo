@@ -5,8 +5,6 @@ const onclicked = () => {
         
     document.getElementById("add-text").value = "";
     
-    // テキストに入力された値を取得して、未完了のTODOのliタグを生成
-    
     // li生成
     const li = document.createElement("li");
     // div.list-low生成 
@@ -24,11 +22,17 @@ const onclicked = () => {
 
      const complateButtun = document.createElement("button");
      complateButtun.innerText = "完了";
+     complateButtun.addEventListener("click", () => {
+        alert("完了")
+     });
      
      
     //  削除buttun生成
      const deleteButtun = document.createElement("button");
      deleteButtun.innerText = "削除";
+     deleteButtun.addEventListener("click", () => {
+        alert("削除")
+     });
      
      
     
@@ -41,17 +45,6 @@ const onclicked = () => {
     li.appendChild(div);
     // 未完了リストに追加
     document.getElementById("incomplate-list").appendChild(li);
-    
-   
-
-
-
-
-
-
-
-
-
 
 }
 
