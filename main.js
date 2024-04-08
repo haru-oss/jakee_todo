@@ -35,7 +35,7 @@ const onclicked = () => {
         // 押された削除ボタンの親にあるliタグを未完了リストから削除
         // closestの特徴：　　　指定したタグに一番近い("liタグを探して取得する")
         const deleteTarget = deleteButtun.closest("li"); 
-        console.log(deleteTarget);
+        document.getElementById("incomplate-list").removeChild(deleteTarget);
      });
      
      
