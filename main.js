@@ -30,9 +30,17 @@ const onclicked = () => {
         // 自分自身を消す時はこのように記述
         complateButtun.nextElementSibling.remove();
         complateButtun.remove();
-    
-
+        
+// 戻すボタン生成
+        const backButton = document.createElement("button")
+        backButton.innerText = ("戻す");
+        moveTarget.firstElementChild.appendChild(backButton);
+ //完了リストに移動 
+        document.getElementById("complate-list").appendChild(moveTarget);
+        // const back = div.appendChild(backButton);
+        // complateList.appendChild(li)
      });
+
      
      
     //  削除buttun生成
