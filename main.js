@@ -29,6 +29,7 @@ const onclicked = () => {
 
         // 自分自身を消す時はこのように記述
         complateButtun.nextElementSibling.remove();
+        complateButtun.remove();
     
 
      });
